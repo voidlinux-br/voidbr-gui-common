@@ -1,12 +1,12 @@
 # Maintainer: Vilmar Catafesta <vcatafesta@gmail.com>
 
-pkgname=voidbr-pkgname
-pkgdesc="Package template for VoidLinuxBR"
+pkgname=voidbr-gui-common
+pkgdesc="VoidBR GUI Meta Package"
 pkgver=$(date +%Y%m%d)
 pkgrel=$(date +%H%M)
-provides=()               # "eu SOU o $pkgname pkg1, pra quem depender deles"
-replaces=()               # "remove o pkg1 pkg2 antigo automaticamente quando eu instalar"
-conflicts=()              # "nunca me deixe coexistir com o pkg1 pkg2 original"
+provides=()  # "eu SOU o $pkgname pkg1, pra quem depender deles"
+replaces=()  # "remove o pkg1 pkg2 antigo automaticamente quando eu instalar"
+conflicts=() # "nunca me deixe coexistir com o pkg1 pkg2 original"
 arch=('any')
 license=('MIT')
 #url="ssh://git@github.com/voidlinuxbr/${pkgname}"
@@ -14,24 +14,39 @@ url="https://github.com/voidlinuxbr/${pkgname}"
 source=("git+${url}.git")
 md5sums=('SKIP')
 makedepends=()
-depends=()
+depends=(
+	voidbr-base-common
+	Adapta                  # Tema GTK (arquivos)
+	adwaita-icon-theme      # Tema de ícones GNOME/GTK (arquivos)
+	adwaita-plus            # Extensão do tema Adwaita (arquivos)
+	font-awesome            # Fontes de ícones
+	font-iosevka            # Fonte monoespaçada
+	gdk-pixbuf              # Carregamento de imagens (GTK)
+	libavif                 # Suporte a imagens AVIF
+	libheif                 # Suporte a imagens HEIF
+	libheif-pixbuf-loader   # Integração libheif/gdk-pixbuf
+	nerd-fonts-symbols-ttf  # Símbolos Nerd Font
+	noto-fonts-emoji        # Fontes de emoji da Google
+	noto-fonts-ttf          # Fontes Noto (arquivos)
+	terminus-font           # Fonte de console
+	ttf-jetbrains-mono-nerd # Fonte JetBrains Mono Nerd
+	ttf-ubuntu-font-family  # Fonte Ubuntu
+	voidbr-beauty-icons     # Tema de ícones VoidBR (arquivos)
+	voidbr-tokyo-theme      # Tema Tokyo Night (arquivos)
+	voidbr-wallpapers       # Wallpapers VoidBR (arquivos)
+	voidbr-webapps          # Atalhos de webapps VoidBR (arquivos .desktop)
+  chili-iso2usb           # utilitario para gravar iso em pendrive/device
+)
 backup=()
-
-# Automatically detect and use the correct install file
-if [ -e "${pkgname}.install" ]; then
-	install=${pkgname}.install
-elif [ -e "pkgbuild.install" ]; then
-	install=pkgfile.install
-fi
 
 package() {
 	# Verify default folder
-  if [ -d "${srcdir}/${pkgname}/${pkgname}" ]; then
+	if [ -d "${srcdir}/${pkgname}/${pkgname}" ]; then
 		InternalDir="${srcdir}/${pkgname}/${pkgname}"
-  elif [ -d "${srcdir}/${pkgname}" ]; then
+	elif [ -d "${srcdir}/${pkgname}" ]; then
 		InternalDir="${srcdir}/${pkgname}"
 	else
-    #local
+		#local
 		InternalDir="${WORKDIR}"
 	fi
 

@@ -1,3 +1,3 @@
-# voidbr-pkgfile
+# voidbr-gui-common
 
-Template for VoidBR pkgmake/pkgfile packages
+VoidBR GUI Meta Package
