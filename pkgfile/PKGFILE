@@ -15,7 +15,6 @@ source=("git+${url}.git")
 md5sums=('SKIP')
 makedepends=()
 depends=(
-	voidbr-base-common
 	Adapta                  # Tema GTK (arquivos)
 	adwaita-icon-theme      # Tema de ícones GNOME/GTK (arquivos)
 	adwaita-plus            # Extensão do tema Adwaita (arquivos)
@@ -36,6 +35,15 @@ depends=(
 	voidbr-wallpapers       # Wallpapers VoidBR (arquivos)
 	voidbr-webapps          # Atalhos de webapps VoidBR (arquivos .desktop)
   chili-iso2usb           # utilitario para gravar iso em pendrive/device
+  lightdm
+  lightdm-gtk-greeter
+  lightdm-gtk-greeter-settings
+  arc-theme
+  papirus-icon-theme
+  dejavu-fonts-ttf
+  voidbr-lightdm-themes
+  sddm
+  voidbr-sddm-themes
 )
 backup=()
 
