@@ -15,35 +15,85 @@ source=("git+${url}.git")
 md5sums=('SKIP')
 makedepends=()
 depends=(
-	Adapta                  # Tema GTK (arquivos)
-	adwaita-icon-theme      # Tema de ícones GNOME/GTK (arquivos)
-	adwaita-plus            # Extensão do tema Adwaita (arquivos)
-	font-awesome            # Fontes de ícones
-	font-iosevka            # Fonte monoespaçada
-	gdk-pixbuf              # Carregamento de imagens (GTK)
-	libavif                 # Suporte a imagens AVIF
-	libheif                 # Suporte a imagens HEIF
-	libheif-pixbuf-loader   # Integração libheif/gdk-pixbuf
-	nerd-fonts-symbols-ttf  # Símbolos Nerd Font
-	noto-fonts-emoji        # Fontes de emoji da Google
-	noto-fonts-ttf          # Fontes Noto (arquivos)
+	Adapta             # Tema GTK (arquivos)
+	adwaita-icon-theme # Tema de ícones GNOME/GTK (arquivos)
+	adwaita-plus       # Extensão do tema Adwaita (arquivos)
+	arc-theme
+	blueberry
+	bluedevil
+	blueman
+	bluez # Pilha de protocolos Bluetooth
+	bluez-alsa
+	bluez-deprecated
+	cantarell-fonts # Fonte oficial da interface GNOME
+	chili-iso2usb   # utilitario para gravar iso em pendrive/device
+	dbus-elogind
+	dejavu-fonts-ttf
+	elogind
+	file-roller        # Gerenciador de compactados (GUI)
+	firefox            # Navegador Firefox
+	firefox-i18n-pt-BR # Firefox em português (Brasil)
+	font-awesome       # Fontes de ícones
+	font-fira-ttf
+	font-firacode
+	font-hack-ttf
+	font-iosevka # Fonte monoespaçada
+	gdk-pixbuf   # Carregamento de imagens (GTK)
+	gnome-bluetooth1
+	gparted # Editor de partições (GUI)
+	gvfs
+	gvfs-afc
+	gvfs-cdda
+	gvfs-gphoto2
+	gvfs-mtp
+	gvfs-smb
+	kitty                 # Modern, hackable, featureful, OpenGL based terminal emulator
+	libavif               # Suporte a imagens AVIF
+	libheif               # Suporte a imagens HEIF
+	libheif-pixbuf-loader # Integração libheif/gdk-pixbuf
+	lightdm
+	lightdm-gtk-greeter
+	lightdm-gtk-greeter-settings
+	lm_sensors
+	lxdm
+	lxdm-theme-vdojo
+	mate-calc              # Calculadora (GUI)
+	mate-polkit            # Agente de autenticação (GUI)
+	mesa-demos             # Ferramentas de teste Mesa (inclui apps com janela)
+	mesa-dri               # Drivers gráficos DRI (biblioteca, X e Wayland)
+	mesa-vaapi             # Aceleração de vídeo VA-API (biblioteca, X e Wayland)
+	mpv                    # Player de vídeo (GUI)
+	nerd-fonts-symbols-ttf # Símbolos Nerd Font
+	network-manager-applet # Ícone de bandeja de rede (GUI)
+	noto-fonts-cjk
+	noto-fonts-emoji # Fontes de emoji da Google
+	noto-fonts-ttf   # Fontes Noto (arquivos)
+	octoxbps         # Gerenciador de pacotes (GUI)
+	papirus-icon-theme
+	pasystray   # Ícone de áudio (GUI)
+	pavucontrol # Volume control applet for Pipewire
+	polkit-elogind
+	qt5ct # Qt5 Configuration Tool (GUI)
+	qt6ct # Qt6 Configuration Tool (GUI)
+	rxvt-unicode
+	sddm                    # Display manager (Fluxbox, Hyprland, Sway, Mango)
 	terminus-font           # Fonte de console
 	ttf-jetbrains-mono-nerd # Fonte JetBrains Mono Nerd
 	ttf-ubuntu-font-family  # Fonte Ubuntu
-	voidbr-beauty-icons     # Tema de ícones VoidBR (arquivos)
-	voidbr-tokyo-theme      # Tema Tokyo Night (arquivos)
-	voidbr-wallpapers       # Wallpapers VoidBR (arquivos)
-	voidbr-webapps          # Atalhos de webapps VoidBR (arquivos .desktop)
-  chili-iso2usb           # utilitario para gravar iso em pendrive/device
-  lightdm
-  lightdm-gtk-greeter
-  lightdm-gtk-greeter-settings
-  arc-theme
-  papirus-icon-theme
-  dejavu-fonts-ttf
-  voidbr-lightdm-themes
-  sddm
-  voidbr-sddm-themes
+	udisks2
+	voidbr-beauty-icons # Tema de ícones VoidBR (arquivos)
+	voidbr-iso-writer   # Gravar ISO em pendrive (GUI)
+	voidbr-lightdm-themes
+	voidbr-sddm-themes     # Temas do sddm VoidBR
+	voidbr-tokyo-theme     # Tema Tokyo Night (arquivos)
+	voidbr-wallpapers      # Wallpapers VoidBR (arquivos)
+	voidbr-webapps         # Atalhos de webapps VoidBR (arquivos .desktop)
+	xdg-desktop-portal     # Camada de comunicação apps/desktop
+	xdg-desktop-portal-gtk # Implementação GTK do portal XDG
+	xdg-user-dirs          # Gerenciamento de pastas do usuário
+	xdg-user-dirs-gtk      # GTK+ tool xdg-user-dirs
+	xdg-utils              # Integração com área de trabalho (scripts, X e Wayland)
+	xfce4-terminal         # Terminal (GUI)
 )
 backup=()
 
