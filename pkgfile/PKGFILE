@@ -94,6 +94,7 @@ depends=(
 	xdg-user-dirs-gtk      # GTK+ tool xdg-user-dirs
 	xdg-utils              # Integração com área de trabalho (scripts, X e Wayland)
 	xfce4-terminal         # Terminal (GUI)
+  gnome-system-monitor   # Process viewer and system resource monitor for GNOME
 )
 backup=()
 
