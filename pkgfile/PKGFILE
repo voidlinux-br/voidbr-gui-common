@@ -66,15 +66,15 @@ depends=(
 	nerd-fonts-symbols-ttf # Símbolos Nerd Font
 	network-manager-applet # Ícone de bandeja de rede (GUI)
 	noto-fonts-cjk
-	noto-fonts-emoji # Fontes de emoji da Google
-	noto-fonts-ttf   # Fontes Noto (arquivos)
-	octoxbps         # Gerenciador de pacotes (GUI)
-	papirus-icon-theme
-	pasystray   # Ícone de áudio (GUI)
-	pavucontrol # Volume control applet for Pipewire
+	noto-fonts-emoji          # Fontes de emoji da Google
+	noto-fonts-ttf            # Fontes Noto (arquivos)
+	octoxbps                  # Gerenciador de pacotes (GUI)
+	papirus-icon-theme        # SVG icon theme for Linux, based on Paper Icon Set
+	pasystray                 # Ícone de áudio (GUI)
+	pavucontrol               # Volume control applet for Pipewire
 	polkit-elogind
-	qt5ct # Qt5 Configuration Tool (GUI)
-	qt6ct # Qt6 Configuration Tool (GUI)
+	qt5ct                     # Qt5 Configuration Tool (GUI)
+	qt6ct                     # Qt6 Configuration Tool (GUI)
 	rxvt-unicode
 	sddm                    # Display manager (Fluxbox, Hyprland, Sway, Mango)
 	terminus-font           # Fonte de console
