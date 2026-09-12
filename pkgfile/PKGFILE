@@ -40,6 +40,7 @@ depends=(
 	font-iosevka # Fonte monoespaçada
 	gdk-pixbuf   # Carregamento de imagens (GTK)
 	gnome-bluetooth1
+  libspa-bluetooth # Bluetooth para PipeWire
 	gparted # Editor de partições (GUI)
 	gvfs
 	gvfs-afc
@@ -95,6 +96,21 @@ depends=(
 	xdg-utils              # Integração com área de trabalho (scripts, X e Wayland)
 	xfce4-terminal         # Terminal (GUI)
   gnome-system-monitor   # Process viewer and system resource monitor for GNOME
+  gnome-keyring
+	alsa-pipewire
+	alsa-plugins-pulseaudio
+	alsa-utils
+	wireplumber
+	pipewire         # Servidor de áudio (daemon)
+	playerctl        # Controle MPRIS de mídia (CLI)
+	pulseaudio       # Servidor de áudio (daemon)
+	pulseaudio-utils # Utilitários CLI PulseAudio
+	gst-plugins-bad1  # Codecs GStreamer
+	gst-plugins-base1 # Codecs GStreamer (base)
+	gst-plugins-good1 # Codecs GStreamer
+	gst-plugins-ugly1 # Codecs GStreamer (restrito)
+	libjack-pipewire # JACK sobre PipeWire
+  plank
 )
 backup=()
 
